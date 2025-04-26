@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Courses</string>
+
+    <string name="onboarding_fragment">Onboarding fragment</string>
+    <string name="login_fragment">Login fragment</string>
+    <string name="main_fragment">Main fragment</string>
+    <string name="favorites_fragment">Favorites fragment</string>
+    <string name="account_fragment">Account fragment</string>
 </resources>
