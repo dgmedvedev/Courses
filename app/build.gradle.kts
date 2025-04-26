@@ -34,6 +34,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -46,6 +49,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //ViewBindingPropertyDelegate by Kirill Rozov
+    implementation(libs.vbpd)
+    implementation(libs.vbpd.reflection)
 
     // Lifecycle
     implementation(libs.androidx.lifecycle.livedata)
