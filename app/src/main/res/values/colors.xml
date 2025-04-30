@@ -2,6 +2,7 @@
 <resources>
     <color name="dark">#151515</color>
     <color name="dark_gray">#24252A</color>
+    <color name="gray">#929396</color>
     <color name="light_gray">#32333A</color>
     <color name="stroke">#4D555E</color>
     <color name="glass">#32333A</color>

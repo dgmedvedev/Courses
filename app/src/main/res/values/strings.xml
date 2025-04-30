@@ -2,11 +2,19 @@
     <string name="app_name">Courses</string>
 
     <string name="title">Тысячи курсов\nв одном месте</string>
-    <string name="login_fragment">Login fragment</string>
+    <string name="login">Вход</string>
     <string name="main_fragment">Main fragment</string>
     <string name="favorites_fragment">Favorites fragment</string>
     <string name="account_fragment">Account fragment</string>
     <string name="image_of_courses">Изображение курсов</string>
     <string name="going_to_the_login_page">Переход на страницу входа в систему</string>
     <string name="label_continue">Продолжить</string>
+    <string name="email">Email</string>
+    <string name="hint_text_email">example@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="hint_text_input_password">Введите пароль</string>
+    <string name="content_description_login">Вход в систему</string>
+    <string name="do_not_have_an_account">Нет аккаунта?</string>
+    <string name="registration">Регистрация</string>
+    <string name="forgot_password">Забыл пароль</string>
 </resources>

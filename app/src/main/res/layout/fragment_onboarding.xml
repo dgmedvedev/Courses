@@ -43,12 +43,9 @@
         android:layout_marginBottom="32dp"
         android:backgroundTint="@color/green"
         android:contentDescription="@string/going_to_the_login_page"
-        android:letterSpacing="0.1"
-        android:padding="8dp"
         android:text="@string/label_continue"
         android:textColor="@color/white"
         android:textSize="@dimen/text_medium"
-        app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
