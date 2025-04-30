@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    tools:context=".presentation.LoginFragment">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextViewTitleStyle"
+        android:layout_width="match_parent"
+        android:text="@string/login"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/email"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <EditText
+        android:id="@+id/et_input_email"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:autofillHints="emailAddress"
+        android:hint="@string/hint_text_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/password"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintTop_toBottomOf="@id/et_input_email" />
+
+    <EditText
+        android:id="@+id/et_input_password"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:autofillHints="password"
+        android:hint="@string/hint_text_input_password"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintTop_toBottomOf="@id/tv_password"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/green"
+        android:contentDescription="@string/content_description_login"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintTop_toBottomOf="@id/et_input_password" />
+
+    <LinearLayout
+        android:id="@+id/ll_registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btn_login">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/do_not_have_an_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_small" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/forgot_password"
+        android:textAlignment="center"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintTop_toBottomOf="@id/ll_registration" />
+
+    <View
+        android:id="@+id/stroke_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/stroke"
+        app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password" />
+
+    <ImageButton
+        android:id="@+id/btn_vk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_vk"
+        android:contentDescription="@string/content_description_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stroke_view"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_ok"
+        android:contentDescription="@string/content_description_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stroke_view"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
