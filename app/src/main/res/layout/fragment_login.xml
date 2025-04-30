@@ -32,19 +32,11 @@
 
     <EditText
         android:id="@+id/et_input_email"
+        style="@style/EditTextStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:autofillHints="emailAddress"
-        android:background="@drawable/input_field"
-        android:gravity="start|center"
         android:hint="@string/hint_text_email"
         android:inputType="textEmailAddress"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textAlignment="textStart"
-        android:textColorHint="@color/gray"
-        android:textSize="@dimen/text_medium"
         app:layout_constraintTop_toBottomOf="@id/tv_email"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -61,19 +53,11 @@
 
     <EditText
         android:id="@+id/et_input_password"
+        style="@style/EditTextStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:autofillHints="password"
-        android:background="@drawable/input_field"
-        android:gravity="start|center"
         android:hint="@string/hint_text_input_password"
         android:inputType="textVisiblePassword"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textAlignment="textStart"
-        android:textColorHint="@color/gray"
-        android:textSize="@dimen/text_medium"
         app:layout_constraintTop_toBottomOf="@id/tv_password"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -127,7 +111,7 @@
         app:layout_constraintTop_toBottomOf="@id/ll_registration" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/stroke_view"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="32dp"
@@ -142,7 +126,7 @@
         android:background="@drawable/button_vk"
         android:contentDescription="@string/content_description_login"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/stroke_view"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
@@ -153,7 +137,7 @@
         android:background="@drawable/button_ok"
         android:contentDescription="@string/content_description_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/stroke_view"
         tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

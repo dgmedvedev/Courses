@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/layout_height_bottom_menu"
+    android:background="@color/dark_gray"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_main"
+        style="@style/NavLinearLayoutItemStyle"
+        android:background="@color/dark_gray">
+
+        <ImageView
+            android:id="@+id/iv_main"
+            style="@style/NavImageViewItemStyle"
+            android:contentDescription="@string/go_to_main_screen"
+            android:src="@drawable/icon_main" />
+
+        <TextView
+            android:id="@+id/tv_main"
+            style="@style/NavTextViewItemStyle"
+            android:text="@string/nav_main" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_favorite"
+        style="@style/NavLinearLayoutItemStyle"
+        android:background="@color/dark_gray">
+
+        <ImageView
+            android:id="@+id/iv_favorite"
+            style="@style/NavImageViewItemStyle"
+            android:contentDescription="@string/go_to_favorite_screen"
+            android:src="@drawable/icon_favorites" />
+
+        <TextView
+            android:id="@+id/tv_favorite"
+            style="@style/NavTextViewItemStyle"
+            android:text="@string/nav_favorites" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_account"
+        style="@style/NavLinearLayoutItemStyle"
+        android:background="@color/dark_gray">
+
+        <ImageView
+            android:id="@+id/iv_account"
+            style="@style/NavImageViewItemStyle"
+            android:contentDescription="@string/go_to_account_screen"
+            android:src="@drawable/icon_person" />
+
+        <TextView
+            android:id="@+id/tv_account"
+            style="@style/NavTextViewItemStyle"
+            android:text="@string/nav_account" />
+
+    </LinearLayout>
+</LinearLayout>

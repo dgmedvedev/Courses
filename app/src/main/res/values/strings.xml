@@ -17,4 +17,10 @@
     <string name="do_not_have_an_account">Нет аккаунта?</string>
     <string name="registration">Регистрация</string>
     <string name="forgot_password">Забыл пароль</string>
+    <string name="nav_main">Главная</string>
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_account">Аккаунт</string>
+    <string name="go_to_main_screen">Переход к главному экрану</string>
+    <string name="go_to_favorite_screen">Переход к экрану избранное</string>
+    <string name="go_to_account_screen">Переход к экрану аккаунт</string>
 </resources>
