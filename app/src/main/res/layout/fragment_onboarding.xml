@@ -8,13 +8,10 @@
 
     <TextView
         android:id="@+id/tv_title"
+        style="@style/TextViewTitleStyle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
         android:text="@string/title"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_title"
         app:layout_constraintTop_toTopOf="parent" />
 
     <HorizontalScrollView
