@@ -20,6 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:letterSpacing="0.015"
         android:text="@string/email"
         android:textAlignment="textStart"
         android:textColor="@color/white"
@@ -33,6 +34,7 @@
         android:autofillHints="emailAddress"
         android:hint="@string/hint_text_email"
         android:inputType="textEmailAddress"
+        android:letterSpacing="0.025"
         app:layout_constraintTop_toBottomOf="@id/tv_email"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -41,6 +43,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:letterSpacing="0.015"
         android:text="@string/password"
         android:textAlignment="textStart"
         android:textColor="@color/white"
@@ -54,6 +57,7 @@
         android:autofillHints="password"
         android:hint="@string/hint_text_input_password"
         android:inputType="textVisiblePassword"
+        android:letterSpacing="0.025"
         app:layout_constraintTop_toBottomOf="@id/tv_password"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -64,6 +68,7 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/green"
         android:contentDescription="@string/content_description_login"
+        android:letterSpacing="0.01"
         android:text="@string/login"
         android:textColor="@color/white"
         android:textSize="@dimen/text_medium"
@@ -82,6 +87,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
+            android:letterSpacing="0.04"
             android:text="@string/do_not_have_an_account"
             android:textColor="@color/white"
             android:textSize="@dimen/text_small" />
@@ -89,6 +95,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:letterSpacing="0.04"
             android:text="@string/registration"
             android:textColor="@color/green"
             android:textSize="@dimen/text_small" />
@@ -100,6 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:letterSpacing="0.04"
         android:text="@string/forgot_password"
         android:textAlignment="center"
         android:textColor="@color/green"
