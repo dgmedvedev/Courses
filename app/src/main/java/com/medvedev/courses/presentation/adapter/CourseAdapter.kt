@@ -66,16 +66,20 @@ class CourseAdapter(private val onCourseItemClickListener: ((Course) -> Unit)?) 
         }
     }
 
-    private fun convertDate(input: String): String {
-        val inputFormatter = DateTimeFormatter.ofPattern(PATTERN_INPUT_DATE)
-        val date = LocalDate.parse(input, inputFormatter)
-        val outputFormatter = DateTimeFormatter.ofPattern(PATTERN_OUTPUT_DATE, Locale(LANGUAGE))
-        val convertDate = date.format(outputFormatter)
-        val firstCharMonth = convertDate.substring(START_INDEX, END_INDEX).uppercase()
-        return convertDate.replaceRange(START_INDEX, END_INDEX, firstCharMonth)
+    private fun convertDate(input: String?): String {
+        input?.let {
+            val inputFormatter = DateTimeFormatter.ofPattern(PATTERN_INPUT_DATE)
+            val date = LocalDate.parse(input, inputFormatter)
+            val outputFormatter = DateTimeFormatter.ofPattern(PATTERN_OUTPUT_DATE, Locale(LANGUAGE))
+            val convertDate = date.format(outputFormatter)
+            val firstCharMonth = convertDate.substring(START_INDEX, END_INDEX).uppercase()
+            return convertDate.replaceRange(START_INDEX, END_INDEX, firstCharMonth)
+        }
+        return BLANK_DATE
     }
 
     companion object {
+        private const val BLANK_DATE = ""
         private const val LANGUAGE = "RU"
         private const val PATTERN_INPUT_DATE = "yyyy-MM-dd"
         private const val PATTERN_OUTPUT_DATE = "dd MMMM yyyy"
