@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="236dp"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="16dp"
-    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
     android:backgroundTint="@color/dark_gray"
     app:cardCornerRadius="12dp">
 
     <ImageView
+        android:id="@+id/iv_course"
         android:layout_width="wrap_content"
         android:layout_height="114dp"
         android:contentDescription="@string/image_of_course"
@@ -34,7 +33,7 @@
                 android:id="@+id/tv_rate"
                 android:layout_width="46dp"
                 android:layout_height="22dp"
-                android:background="@drawable/glass"
+                android:background="@drawable/glass_background"
                 android:drawablePadding="5dp"
                 android:gravity="start|center"
                 android:letterSpacing="0.04"
@@ -49,13 +48,14 @@
 
             <TextView
                 android:id="@+id/tv_start_date"
-                android:layout_width="87dp"
+                android:layout_width="wrap_content"
                 android:layout_height="22dp"
                 android:layout_marginStart="4dp"
-                android:background="@drawable/glass"
+                android:background="@drawable/glass_background"
                 android:gravity="center"
-
                 android:letterSpacing="0.04"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_small"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -63,6 +63,7 @@
                 tools:text="22 Мая 2024" />
 
             <ImageView
+                android:id="@+id/iv_icon_favorites"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
                 android:background="@drawable/glass_circle"
@@ -127,11 +128,11 @@
                 android:layout_marginTop="10dp"
                 android:background="@color/dark_gray"
                 android:letterSpacing="0.015"
+                android:text="@string/price_label"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_large"
                 app:layout_constraintStart_toEndOf="@id/tv_price"
-                app:layout_constraintTop_toBottomOf="@id/tv_text"
-                tools:text="₽" />
+                app:layout_constraintTop_toBottomOf="@id/tv_text" />
 
             <TextView
                 android:id="@+id/tv_detailed"
@@ -143,11 +144,11 @@
                 android:background="@color/dark_gray"
                 android:gravity="center_vertical"
                 android:letterSpacing="0.04"
+                android:text="@string/detailed"
                 android:textColor="@color/green"
                 android:textSize="@dimen/text_small"
                 app:layout_constraintEnd_toStartOf="@id/iv_icon_detailed_info_course"
-                app:layout_constraintTop_toBottomOf="@id/tv_text"
-                tools:text="Подробнее" />
+                app:layout_constraintTop_toBottomOf="@id/tv_text" />
 
             <ImageView
                 android:id="@+id/iv_icon_detailed_info_course"
